@@ -1,0 +1,846 @@
+
+/*CSS styling for the Prototype pages. I am going to be styling using firefox for reference. Before I begin to style anything, I will place a CSS reset first.*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------------------HOME PAGE--------------------------*/
+/*AFTER CSS RESET. I am first going to start off by styling some super basic elements like colors and fonts just to orientate the page a bit. I am styling for mobile first starting with the Home Page. I am going to style the page from top to bottom starting with the nav.*/
+body {
+    background-color:#fff;
+}
+.arclogo {
+ background-color: #3C3B3A;
+ padding-top: .5em;
+ text-align: center;
+}
+
+/*TOP NAVIGATION MENU*/
+nav {
+    background-color: #3C3B3A;
+    line-height: 2.3em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+ul li a {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*DISCOVER YOUR ARC*
+I am now going to being styling the fonts and icons to make them match the reference page.*/
+.services {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.services h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #3C3B3A;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+.services p1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #3C3B3A;
+    line-height: 35px;
+}
+.service_icons {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    color: #26A682;
+    padding: 1em;
+    text-align: center;
+}
+.onlyicons {
+    padding-bottom: 1em;
+}
+.services {
+    padding-bottom: 1em;
+}
+.services .service_icons figure img {
+    width: 35px;
+    padding: .5em;
+}
+
+/*Get Started Button Styling*/
+.services button {
+    padding-top: .2em;
+    padding-bottom: .2em;
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #26A682;
+    border-radius: 5em;
+    box-shadow: .1em .1em .2em #888888;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Middle section images*/
+.discover_img {
+    width: 90%;
+    margin: auto;
+    padding-top: 1em;
+}
+
+/*There is a scroll button that only becomes visible in desktop so for now I am just going to make it go away in the mean time*/
+.scrolldown {
+    visibility: hidden;
+    position: absolute;
+}
+.school_pic img{
+    width: 100%;
+}
+.discover_section {
+    padding-bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.discover_section h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    font-style: italic;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    color: #3C3B3A;
+}
+
+.discover_section h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: #26A682;
+    padding-bottom: .5em;
+}
+.discover_section p2 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 35px;
+    color: #3C3B3A;
+}
+.discover_section button {
+    padding-top: .4em;
+    padding-bottom: .4em;
+    padding-left: .8em;
+    padding-right: .8em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #26A682;
+    border-radius: 5em;
+    box-shadow: .1em .1em .2em #888888;
+    border: none;
+    display: block;
+    margin-left: auto;
+}
+.discover_section .spacediv {
+    padding-top: 1em;
+}
+/*Now I am going to being styling the "endorsment" section as I am calling it, I am going to start tweaking around with the picture, resizing it, adding a radius, etc. After I will adjust the font familys and colors to match the demo.*/
+.endorsment {
+    background-color: #3C3B3A;
+    padding-top: 1.5em;
+}
+.endorsment h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5em;
+    color: #fff;
+    padding-top: .5em;
+}
+.endorsment h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5em;
+    color: #fff;
+    padding-bottom: .5em;
+}
+.endorsment .quote {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.endorsment p3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 35px;
+}
+.endorsment .simon {
+    border-radius: 100%;
+    border: 5px solid white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+/*Discover Section. Not a lot of crazy styling here, just going to change the fonts, colors, and line hights. I am also going to stle the learn more button similiar to the other buttons to match the theme.*/
+.entertainment {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.entertainment_pic {
+    width: 100%;
+}
+.entertainment h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    font-style: italic;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    color: #3C3B3A;
+}
+.entertainment h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: #26A682;
+    padding-bottom: .5em;
+}
+.entertainment p2 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 35px;
+    color: #3C3B3A;
+}
+.entertainment button {
+    padding-top: .4em;
+    padding-bottom: .4em;
+    padding-left: .8em;
+    padding-right: .8em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #26A682;
+    border-radius: 5em;
+    box-shadow: .1em .1em .2em #888888;
+    border: none;
+    display: block;
+    margin-left: auto;
+}
+.entertainment .spacediv {
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+/*Now I am going to style the footer of the home page. *Update* I honestly can not figure out how to align the button with social media icons so I am just going to leave it down below for now.*/
+.footer {
+    background-color: #3C3B3A;
+}
+.footer footer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    text-align: center;
+}
+.footer .footer_icons {
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer .media {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+.footer .backtop_button figure img {
+    width: 9%;
+    position: relative;
+    padding-bottom: .1em;
+    padding-right: 1em;
+}
+.footer .backtop_button {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 9px;
+    text-align: right;
+    padding-right: 2em;
+    padding-bottom: 1em;
+}
+
+/*-------------------ABOUT PAGE--------------------------*/
+/*Now I am going to move on to styling the about page. Just like the homepage, I am going to work my way top to bottom adjusting what I need to as I go. A lot of the same styling elements will be the same as on the home page.*/
+.expect {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.expect h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #3C3B3A;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+.expect p1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #3C3B3A;
+    line-height: 35px;
+}
+.expect .expect_img {
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/*Here I am using the only way I know how to center text in an image. Honestly not 100% sure if this is the proper way but it works. I am basically making the position:absalute and manually moving it over the banner image.*/
+.about_banner .about_img {
+    width: 100%;
+    height: 180px;
+}
+.about_banner .centered {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    background-color: ;
+    position: absolute;
+    top: 108%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Basic article content styling. Adjusting the font-familys of the paragraphs and headings as well as the colors, positioning, and padding etc.*/
+.whowhatwhere {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.whowhatwhere h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    color: #3C3B3A;
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+}
+.whowhatwhere p2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #3C3B3A;
+    line-height: 35px;
+}
+
+/*I am using the same technique as above for the services banner. Using position:absalute and manually placing the services text over the image. I am also adding the correct padding and font styles.*/
+.services_banner .services_img{
+    width: 100%;
+    height: 180px;
+}
+.centered2 {   
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 188%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.break{
+    padding-bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.break h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    padding-top: .5em;
+    padding-bottom: .4em;
+    color: #3C3B3A;
+}
+.break h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: #26A682;
+    padding-bottom: .4em;
+}
+.break p2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 35px;
+    color: #3C3B3A;
+}
+
+/*Now here the styling will be a bit different as I am going to have to get rid of the images for the mobile screen as they only appear once in tablet.*/
+.bar, .bowling, .fitness, .climbing {
+    visibility: hidden;
+    position: absolute; 
+}
+
+/*Now moving on with the more simple page styling once again.*/
+.greyback {
+    background-color: #F2F2F2;
+}
+.competitive {
+    padding-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.competitive h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    padding-top: .5em;
+    padding-bottom: .4em;
+    color: #3C3B3A;
+}
+.competitive h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: #26A682;
+    padding-bottom: .4em;
+}
+.competitive p2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 35px;
+    color: #3C3B3A;
+}
+
+/*I am going to style the news letter banner with the button inside. I will be changed with fonts and padding as well as the colours.*/
+.newsletter {
+    background-color: #3C3B3A;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+}
+.newsletter button {
+    padding-top: .2em;
+    padding-bottom: .2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #26A682;
+    border-radius: 5em;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.newsletter div {
+    padding-top: 1em;
+}
+
+/*Now back to the main articles. I am going to style the theme.*/
+.newyear {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.newyear h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    padding-top: .5em;
+    padding-bottom: .4em;
+    color: #3C3B3A;
+}
+.newyear h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: #26A682;
+    padding-bottom: .4em;
+}
+.newyear p2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 35px;
+    color: #3C3B3A;
+}
+
+.rockclimb {
+    background-color: #F2F2F2;
+    padding-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.rockclimb h6 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    padding-top: .5em;
+    padding-bottom: .4em;
+    color: #3C3B3A;
+}
+.rockclimb h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: #26A682;
+    padding-bottom: .4em;
+}
+.rockclimb p2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 35px;
+    color: #3C3B3A;
+}
+
+/*Now for the sponsor section. This part is pretty simple as I just have to make sure the images are the correct size and then use margin auto on both sides to center the logos.*/
+.thanks {
+    font-family: 'Raleway', sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+    text-align: center;
+    color: #3C3B3A;
+    padding-top: .5em;
+}
+.thanks img {
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: .5em;
+    padding-top: .5em;
+}
+
+/*This sponsor was just a bit too big so I gave just this logo a class to give it some speicla attention*/
+.thanks .cibc {
+    max-width: 35%;
+}   
+
+/*-------------------CONTACT PAGE--------------------------*/
+/*Styling the contact page first starting with the h's and p's, then I resize the image*/
+.contact {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.contact .hearyou h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #3C3B3A;
+    padding-top: .5em;
+    padding-bottom: .4em;
+}
+.contact .hearyou p1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    color: #3C3B3A;
+    padding-top: 1em;
+}
+.contact .hearyou .contact_img {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Contact Form Styling. Here is where I will make the contact form look all pretty like the demo.*/
+.contactform {
+    background-color: #26A682;
+    border-radius: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    box-shadow: .4em .4em .4em #999;
+}
+.contactform input {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    margin-left: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    border: none;
+    border-radius: 1em;
+    width: 80%;
+}
+.contactform fieldset div{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    padding-bottom: .3em;
+    padding-top: .6em;
+    margin-left: 1em;
+    color: white;
+
+}
+.contactform fieldset .message {
+    padding-bottom: 4em;
+}
+.contact h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: .5em;
+}
+.contact .contactform button {
+    background-color: #3C3B3A;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 32px;
+    border: none;
+    border-radius: 1em;
+    padding-top: .1em;
+    padding-bottom: .1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: flex;
+    margin: 0 auto;
+    box-shadow: .1em .1em .1em #124A3A;
+}
+.contact .contactform .container {
+    padding-bottom: 1em;
+}
+
+/*Now I will need to style the location divs to be center in the page and follow the same color theme and font family.*/
+.location {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.location h2{
+    padding-top: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #3C3B3A;
+}
+.location h3 {
+    padding-top: .5em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: #3C3B3A;
+    line-height: 29px;
+}
+.location p1 {
+    font-family: 'Raleway', sans-serif;
+    color: #3C3B3A;
+    font-size: 16px;
+}
+.location div {
+    padding-bottom: 1em;
+}
+
+/*Now I am going to style the map to fit the page. I will do this by using width: 100%.*/
+.map .algonquin iframe {
+    padding-top: 1em;
+    width: 100%;
+    height: 220px;
+}
+
+/*That is the basic styling done for mobile. The next step is to wrtie the first set of media querys for tablet. There will be a few major changes as far as positioning and images that appear.*/
+
+/*------------HOME PAGE MEDIA QUERY TABLET 640PX-------------*/
+@media screen and (min-width: 640px) {
+    .arclogo img{
+        display: flex;
+        margin-right: auto;
+        margin-left: 4em;
+        position: absolute;
+       }
+       
+       /*TOP NAVIGATION MENU*/
+       nav {
+           background-color: #3C3B3A;
+           line-height: 2.3em;
+           text-align: center;
+           padding-top: 1em;
+           padding-bottom: 1em;
+       }
+       ul li a {
+           font-family: 'Raleway', sans-serif;
+           color: #fff;
+           text-decoration: none;
+           font-size: 16px;
+           display: flex;
+           margin-left: 1em;
+       }
+       .tabmenu nav ul{
+        display: flex;
+        margin-right: auto;
+        margin-left: 60%;
+       }
+       /*Now I will move on to resizing font sizes to be bigger for tablet. Starting with headings, paragraphs, and images while working my way top to bottom. I will also have to make the scroll button reapear and style it.*/
+       .services {
+           margin-right: 4em;
+           margin-left: 4em;
+       }
+       .services h1 {
+           font-size: 72px;
+       }
+       .services p1 {
+           font-size: 24px;
+       }
+
+       .services .onlyicons figure img {
+        width: 50%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+       }
+       .discover_img {
+           width: 70%;
+           display: flex;
+           margin-right: auto;
+           margin-left: auto;
+       }
+
+       /*Now I will edit the school picture to have a tigher crop. I will do this by adjusting the hight.*/
+       .school_pic img {
+           height: 200px;
+       }
+       .scrolldown {
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        color:#3C3B3A;
+        visibility: visible;
+        position: relative;
+        text-align: center;
+    }
+    .scrolldown img {
+        width: 25px;
+        rotate: 180deg;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .discover_section .spacediv button {
+        font-size: 27px;
+        padding-top: .2em;
+        padding-bottom: .2em;
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+    }
+    .discover_section {
+        padding-top: 1em;
+        margin-right: 4em;
+        margin-left: 4em;
+    }
+    .discover_section h3 {
+        font-size: 40px;
+    }
+    .discover_section h4{
+        font-size: 32px;
+    }
+    .discover_section p2 {
+        font-size: 18px;
+    }
+    /*Now I am going to flex around the layout of the endorsment section.*/
+    .endorsment {
+        padding-bottom: 4em;
+        padding-right: 4em;
+        padding-left: 4em;
+    }
+    .endorsment .simon {
+        width: 80%;
+        margin-bottom: 1em;
+    }
+    .endorsment .left {
+        display: inline;
+        float: left;
+        margin-right: 3em;
+        margin-bottom: 5em;
+    }
+    .endorsment .quote p3 {
+        font-size: 24px;
+    }
+    .entertainment {
+        margin-right: 4em;
+        margin-left: 4em;
+    }
+    .entertainment_pic {
+        height: 200px;
+    }
+    .entertainment h3 {
+        font-size: 40px;
+    }
+    .entertainment h4{
+        font-size: 32px;
+    }
+    .entertainment p2 {
+        font-size: 18px;
+    }
+    .entertainment .spacediv button {
+        font-size: 27px;
+        padding-top: .2em;
+        padding-bottom: .2em;
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+    }
+
+
+/*------------ABOUT PAGE MEDIA QUERY TABLET 640PX-------------*/
+.expect h1 {
+    font-size: 72px;
+}
+.expect p1 {
+    font-size: 24px;
+}
+.bar, .bowling, .fitness, .climbing {
+    visibility: visible;
+    position: relative; 
+    max-width: 300px;
+}
+}
+/*Unfinished :(*/

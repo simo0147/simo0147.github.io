@@ -1,0 +1,146 @@
+<!--This is the About Page of the Prototype Assignment. Once again as always I will start with the basic html:5 items and then essentially I will be copying and pasting a lot of the same code from the about page and tweaking it a little as a lot of the work is already done here for elements that stay static from tab to tab.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!--Now I am going to add my nav in, however, this time toggling the about page as the active page so that it changes.-->
+<body>
+    <div class="tabmenu">
+    <div class="arclogo"> <img src="images/logo.jpg" alt=""></div>
+    <div class="navbar">
+        <nav role="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class= "active">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+    
+    <!--I am now going to move on to the middle sections of the page. I am trying my best to be aware of which titles and paragraph style use the same font choices so I can reuse heading and paragraph tags to make my life easier when I go to style the page after.-->
+    <div class="expect">
+        <h1>What to expect during construction.</h1>
+        <p1>With construction starting in April 2019 we anticpate the new arrival of the ARC building as early as August 2021.</p1>
+        <p1>The current SA Fitness Zone and gym will be operating and open as usual. Please visit the Fitness Zone and the Gymnasium for more information on the hours, offerings, and pricing.</p1>
+        <img class="expect_img" src="images/construction.jpg">
+    </div>
+    <div class="about_banner">
+        <img class="about_img" src="images/about.jpg">
+        <div class="centered">About</div>
+    </div>
+    <div class="whowhatwhere">
+        <div>
+            <h3>Who</h3>
+            <p2>is ARC? We are the Athletics & Recreation Centre. This is an exciting venture for our Algonquin Community.  This facility will provide our students with a place to break through perceptual barriers in a welcoming, safe, inclusive and inviting environment for students of all backgrounds, cultures and abilities to spark a movement.</p2>
+        </div>
+        <div>
+            <h3>What</h3>
+            <p2>is this going to cost me? This facility will be included in your activity fee. All fee-paying students can use and participate in all activities in the building. As for the facility, it will cost Algonquin College $48.8 million.</p2>
+        </div>
+        <div>
+            <h3>Where</h3>
+            <p2>will the ARC building be? The ARC building will be located northeast of the Student Commons building, opposite of the residence. The facility will be an estimated 100,000 square feet! Connected to the Student Commons by a "Plus 15" Pedestrian Link.</p2>
+        </div>
+    </div>
+
+<!--Now moving even lower down into the page, I am going to create the services banner, and then continue on to creating the paragraphs and headings that follow.-->
+    <div class="services_banner">
+        <img class="services_img" src="images/services.jpg">
+        <div class="centered2">Services</div>
+    </div>
+    <div class="break">
+        <div>
+            <h6>Need a break?</h6>
+            <h4>Resteraunt & Lounge</h4>
+            <p2>will have full service throughout the day. Why not come in after a long day of class and order one of our famous poutines. Finished with your food and drink? Why not try out the new billiards area. Grab some friends and dominate them in some pool. Pool, not your thing? Then come on downstairs and try out the new bowling lanes!</p2>
+        </div>
+        <div>
+            <img class="bar" src="images/bar.jpg" alt="bar">
+        </div>
+    </div>
+    <div class="greyback">
+    <div class="competitive">
+        <div>
+            <h6>Competitive friends?</h6>
+            <h4>Bowling Lans</h4>
+            <p2>are finally here. Grab your friends and book a lane at the Student's Association Bowling Lanes that will be part of the upcoming ARC! Don't like Bowling? Well look no further. Practice your swing no matter the weather on the Golf Simulator that will be located in the ARC building.</p2>
+        </div>
+        <div>
+            <img class="bowling" src="images//bowling.jpg" alt="bowling">
+        </div>
+    </div>
+    </div>
+
+<!--Now I am going to code in the banner that suggests the user signs up for the schools news letter. There will also need to be a subscribe button. Then more paragraphs will proceed after.-->
+    <div class="newsletter">
+        Keep up to date with our news letter
+        <div>
+            <button>Subscribe</button>
+        </div>
+    </div>
+    <div class="newyear">
+        <div>
+            <h6>New year, new me</h6>
+            <h4>Fitness Rooms</h4>
+            <p2>Cardio equipment, free weights, selectorized weight equipment and stretching areas will be located in strategically placed locations to best suit your work-out routine. Indoor walking/running track that will test your endurance with inclines and declines that weave around fitness nods, the gymnasiums and the lounge area.</p2>
+        </div>
+        <div>
+            <img class="fitness" src="images/fitness.jpg" alt="fitness">
+        </div>
+    </div>
+    <div class="greyback">
+    <div class="rockclimb">
+        <div>
+            <h6>Indoor climbing?</h6>
+            <h4>Rock Climbing</h4>
+            <p2>Test your strength and flexibility on the rock-climbing wall. Add some variety to your fitness routine, the ARC will be able to offer more yoga and fitness classes to fit into your busy schedule. After a busy day of rock climbing or yoga, come and enjoy our new massage therapy area.</p2>
+        </div>
+        <div>
+            <img class="climbing" src="images/climbing.jpg" alt="climbing">
+        </div>
+    </div>
+    </div>
+
+<!--Now that the the bulk of the about page is done, I will have to add in a sponsors list by placing the companies logo images in and then I will be able to create the footer.-->
+    <div class="thanks">
+        Special Thank you to the following
+        <div>
+            <img src="images/sa.jpg" alt="sa">
+            <img src="images/AC_ICON_FC_GRN_240x200.jpg" alt="ac">
+            <img src="images/pcl.jpg" alt="pcl">
+            <img class="cibc" src="images/cibc.jpg" alt="cibc">
+        </div>
+    </div>
+
+<!--And finally for the footer section of the page. This is identical to the home page so I can literally just copy and paste my previous work in.-->
+<div class="footer">
+    <footer>Follow Us</footer>
+        <div class="footer_icons">
+        <img class="media" src="icons/facebook.jpg" alt="facebook">
+        <img class="media" src="icons/instagram.jpg" alt="instagram">
+        <img class="media" src="icons/twitter.jpg" alt="twitter">
+        <img class="media" src="icons/youtube.jpg" alt="youtube">
+        </div>
+    <div class="backtop_button">
+        <figure>
+            <img class="backtop" src="icons/arrow.jpg" alt="backtop">
+            <figcaption>back to top</figcaption>
+        </figure>
+    </div>
+</div>
+</body>
+</html>
+
+<!--This is the end of the about page, now I will move on to the last page and then I can style.-->
